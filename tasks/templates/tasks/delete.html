@@ -1,0 +1,8 @@
+<p>Siz haqiqatdan ham "{{item}}" ni o`chirmoqchimisiz? </p>
+
+<a href="{% url 'list' %}">Bekor qilish</a>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    <input type="submit" value="Tasdiqlayman">
+</form>
